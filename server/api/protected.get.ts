@@ -1,7 +1,11 @@
-export default defineEventHandler(async (event) => {
-  // Middleware už ověřilo uživatele a uložilo ho do contextu
-  const user = event.context.user  // ← dostupné po auth middleware
+import loginRequired from "../utils/loginRequired"
+
+export default defineEventHandler( async (event) => {
   
+  await loginRequired(event)  
+
+  const user = event.context.user  
+
   // Tvůj chráněný kód
   return { 
     message: 'Protected data', 
