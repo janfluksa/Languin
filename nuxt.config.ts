@@ -19,7 +19,7 @@ export default defineNuxtConfig({
   },
 
   runtimeConfig: {
-    JWT_SECRET: process.env.JWT_SECRET,
+    ACCESS_TOKEN_SECRET: process.env.ACCESS_TOKEN_SECRET,
     mongodbConnectionString: process.env.MONGODB_CONNECTION_STRING,
     // private hodnoty
   },

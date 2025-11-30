@@ -57,7 +57,7 @@ const dropdownItems = ref([
     {
       label: 'Logout',
       icon: 'i-lucide-log-out',
-      to: '/auth/login'
+      to: '/auth/logout'
     }
   ]
 ])

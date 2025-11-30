@@ -4,8 +4,12 @@ import bcrypt from 'bcrypt'
 import User from '~~/server/models/User'
 
 export default defineEventHandler(async (event) => {
+
+  const config = useRuntimeConfig()
+
   const { email, password } = await readBody(event)
 
+  // Email and password is required
   if (!email || !password) {
     throw createError({
       statusCode: 400,
@@ -13,36 +17,42 @@ export default defineEventHandler(async (event) => {
     })
   }
 
-  // 1) Najdi uživatele v DB
+  // Find user in DB
   const user = await User.findOne({ email })
   if (!user) {
     throw createError({ statusCode: 401, statusMessage: 'Invalid credentials' })
   }
 
-  console.log("body.password =", password)
-  console.log("user.password =", user?.password)
+  // Missing db property 'password'
+  if(!user?.password) {
+    return {
+      error: "Missing password in db"
+    }
+  }
 
-  // 2) Ověř heslo
+  // Check password
   const ok = await bcrypt.compare(password, user.password)
   if (!ok) {
     throw createError({ statusCode: 401, statusMessage: 'Invalid credentials' })
   }
 
-  // 3) Vytvoř JWT
-  const config = useRuntimeConfig()
   const token = jwt.sign(
-    { id: user._id, email: user.email },
-    config.JWT_SECRET,
-    { expiresIn: '7d' }
-  )
+    {
+      id: user.id, 
+      email: user.email,
+      realname: `${user.firstname} ${user.lastname}`, 
+    }, 
+    config.ACCESS_TOKEN_SECRET, 
+    { 
+      expiresIn: '1d' 
+    })
+  
 
-  // 4) Ulož token do HTTP-only cookie
-  setCookie(event, 'auth_token', token, {
-    httpOnly: true,
-    sameSite: 'lax',
-    secure: process.env.NODE_ENV === 'production',
-    path: '/'
-  })
-
-  return { ok: true }
+  return { 
+    message: "User authenticated",
+    id: user._id,
+    email: user.email,
+    realname: `${user.firstname} ${user.lastname}`,
+    token: token 
+  }
 })

@@ -1,15 +1,13 @@
-import loginRequired from "../utils/loginRequired"
+
 
 export default defineEventHandler( async (event) => {
   
-  await loginRequired(event)  
-
-  const user = event.context.user  
+//   event.context.auth = { user: 123 }
+  const user = event.context.auth.user  
 
   // Tvůj chráněný kód
   return { 
     message: 'Protected data', 
-    userId: user.id,
-    email: user.email 
+    user: user,
   }
 })
