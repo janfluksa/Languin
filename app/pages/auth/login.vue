@@ -39,8 +39,14 @@ const onSubmit = async (event: FormSubmitEvent<Schema>) => {
 				return
 			}
 
-			// const data = await response._data as { ok: boolean }
-			navigateTo('/auth/register')
+			if (response._data && 'token' in response._data) {
+				useCookie('token').value = response._data.token
+				useCookie('realname').value = response._data.realname
+				useCookie('email').value = response._data.email
+				useCookie('id').value = response._data.id
+
+				navigateTo('/')
+			}
 
 		} catch (err: unknown) {
 
@@ -66,7 +72,6 @@ const onSubmit = async (event: FormSubmitEvent<Schema>) => {
 			<UPageHeader title="Login" class="border-0"/>
 
 			<div class="flex flex-col gap-4">
-
 				<p>Access allowed for assigned personel only.</p>
 
         <UForm :disabled="pending" :schema="schema" :state="state" class="py-4 flex flex-col gap-4" @submit="onSubmit">

@@ -1,6 +1,10 @@
 import jwt from 'jsonwebtoken'
 
 export default defineEventHandler((event) => {
+  // neaplikj se na nic jiného než na api
+  if (!event.path.startsWith('/api/')) return
+
+
 const config = useRuntimeConfig()
 
   const authHeader = getRequestHeader(event, 'authorization')

@@ -31,11 +31,12 @@ const items = computed<NavigationMenuItem[]>(() => [{
   target: '_blank'
 }])
 
+const authName = useCookie('realname')
 
 const dropdownItems = ref([
   [
     {
-      label: 'Jan Fluksa',
+      label: authName.value,
       type: 'label'
     }
   ],
@@ -80,7 +81,7 @@ const dropdownItems = ref([
         <UColorModeButton />
 
         <UDropdownMenu :items="dropdownItems">
-          <UAvatar alt="Jan Fluksa" size="xl" class="text-md"/>
+          <UAvatar :alt="authName || ''" size="xl" class="text-md"/>
         </UDropdownMenu>
       </template>
 

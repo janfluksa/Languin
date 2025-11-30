@@ -1,27 +1,10 @@
 <script setup lang="ts">
 
+    useCookie('token').value = null
+    useCookie('realname').value = null
+    useCookie('email').value = null
+    useCookie('id').value = null
 
+    navigateTo('/auth/login')
 
-
-const logout = async () => {
-  
-  try {
-    await $fetch('/api/auth/logout', {
-      method: 'GET'
-    })
-
-    navigateTo('/')
-
-  } catch (err) {
-    alert("Chyba odhlášení")
-    console.error('API error:', err)
-
-    
-
-  } 
-}
 </script>
-
-<template>
-  <button @click="logout">Odhlásit</button>
-</template>
