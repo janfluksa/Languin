@@ -15,12 +15,12 @@ const variant = props.variant
 
 const items = computed<NavigationMenuItem[]>(() => [{
   label: 'Docs',
-  to: '/docs/getting-started',
-  active: route.path.startsWith('/docs/getting-started')
+  to: '/',
+  active: route.path.startsWith('/')
 }, {
   label: 'Components',
-  to: '/docs/components',
-  active: route.path.startsWith('/docs/components')
+  to: '/',
+  active: route.path.startsWith('/a')
 }, {
   label: 'Figma',
   to: 'https://go.nuxt.com/figma-ui',

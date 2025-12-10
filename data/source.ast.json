@@ -1,0 +1,325 @@
+{
+  "simple.greeting": {
+    "type": "message",
+    "parts": [
+      { "type": "text", "value": "Ahoj světe" }
+    ]
+  },
+
+  "hello.user": {
+    "type": "message",
+    "parts": [
+      { "type": "text", "value": "Ahoj " },
+      { "type": "argument", "name": "name" },
+      { "type": "text", "value": "!" }
+    ]
+  },
+
+  "cart.total": {
+    "type": "message",
+    "parts": [
+      { "type": "text", "value": "Celkem k úhradě: " },
+      {
+        "type": "argument",
+        "name": "amount",
+        "format": {
+          "type": "number",
+          "style": "currency",
+          "currency": "EUR"
+        }
+      }
+    ]
+  },
+
+  "event.start": {
+    "type": "message",
+    "parts": [
+      { "type": "text", "value": "Událost začíná " },
+      {
+        "type": "argument",
+        "name": "startDate",
+        "format": {
+          "type": "date",
+          "style": "medium"
+        }
+      },
+      { "type": "text", "value": " v " },
+      {
+        "type": "argument",
+        "name": "startTime",
+        "format": {
+          "type": "time",
+          "style": "short"
+        }
+      }
+    ]
+  },
+
+  "notifications.count": {
+    "type": "plural",
+    "argument": "count",
+    "offset": 0,
+    "cases": {
+      "=0": {
+        "type": "message",
+        "parts": [
+          { "type": "text", "value": "Nemáš žádná nová oznámení." }
+        ]
+      },
+      "one": {
+        "type": "message",
+        "parts": [
+          { "type": "text", "value": "Máš " },
+          {
+            "type": "argument",
+            "name": "count",
+            "format": { "type": "number" }
+          },
+          { "type": "text", "value": " nové oznámení." }
+        ]
+      },
+      "few": {
+        "type": "message",
+        "parts": [
+          { "type": "text", "value": "Máš " },
+          {
+            "type": "argument",
+            "name": "count",
+            "format": { "type": "number" }
+          },
+          { "type": "text", "value": " nová oznámení." }
+        ]
+      },
+      "other": {
+        "type": "message",
+        "parts": [
+          { "type": "text", "value": "Máš " },
+          {
+            "type": "argument",
+            "name": "count",
+            "format": { "type": "number" }
+          },
+          { "type": "text", "value": " nových oznámení." }
+        ]
+      }
+    }
+  },
+
+  "profile.welcome": {
+    "type": "select",
+    "argument": "gender",
+    "cases": {
+      "male": {
+        "type": "message",
+        "parts": [
+          { "type": "text", "value": "Vítej, " },
+          { "type": "argument", "name": "name" },
+          { "type": "text", "value": " (uživatel)!" }
+        ]
+      },
+      "female": {
+        "type": "message",
+        "parts": [
+          { "type": "text", "value": "Vítej, " },
+          { "type": "argument", "name": "name" },
+          { "type": "text", "value": " (uživatelka)!" }
+        ]
+      },
+      "other": {
+        "type": "message",
+        "parts": [
+          { "type": "text", "value": "Vítej, " },
+          { "type": "argument", "name": "name" },
+          { "type": "text", "value": "!" }
+        ]
+      }
+    }
+  },
+
+  "order.status": {
+    "type": "select",
+    "argument": "status",
+    "cases": {
+      "pending": {
+        "type": "message",
+        "parts": [
+          { "type": "text", "value": "Objednávka čeká na zpracování." }
+        ]
+      },
+      "shipped": {
+        "type": "message",
+        "parts": [
+          { "type": "text", "value": "Objednávka byla odeslána." }
+        ]
+      },
+      "delivered": {
+        "type": "message",
+        "parts": [
+          { "type": "text", "value": "Objednávka byla doručena." }
+        ]
+      },
+      "cancelled": {
+        "type": "message",
+        "parts": [
+          { "type": "text", "value": "Objednávka byla zrušena." }
+        ]
+      },
+      "other": {
+        "type": "message",
+        "parts": [
+          { "type": "text", "value": "Stav objednávky je neznámý." }
+        ]
+      }
+    }
+  },
+
+  "contest.place": {
+    "type": "selectordinal",
+    "argument": "place",
+    "cases": {
+      "one": {
+        "type": "message",
+        "parts": [
+          { "type": "argument", "name": "place" },
+          { "type": "text", "value": "st place" }
+        ]
+      },
+      "two": {
+        "type": "message",
+        "parts": [
+          { "type": "argument", "name": "place" },
+          { "type": "text", "value": "nd place" }
+        ]
+      },
+      "few": {
+        "type": "message",
+        "parts": [
+          { "type": "argument", "name": "place" },
+          { "type": "text", "value": "rd place" }
+        ]
+      },
+      "other": {
+        "type": "message",
+        "parts": [
+          { "type": "argument", "name": "place" },
+          { "type": "text", "value": "th place" }
+        ]
+      }
+    }
+  },
+
+  "inbox.summary": {
+    "type": "select",
+    "argument": "gender",
+    "cases": {
+      "male": {
+        "type": "plural",
+        "argument": "count",
+        "cases": {
+          "=0": {
+            "type": "message",
+            "parts": [
+              { "type": "text", "value": "On nemá žádné nové zprávy." }
+            ]
+          },
+          "one": {
+            "type": "message",
+            "parts": [
+              { "type": "text", "value": "On má " },
+              { "type": "argument", "name": "count" },
+              { "type": "text", "value": " novou zprávu." }
+            ]
+          },
+          "few": {
+            "type": "message",
+            "parts": [
+              { "type": "text", "value": "On má " },
+              { "type": "argument", "name": "count" },
+              { "type": "text", "value": " nové zprávy." }
+            ]
+          },
+          "other": {
+            "type": "message",
+            "parts": [
+              { "type": "text", "value": "On má " },
+              { "type": "argument", "name": "count" },
+              { "type": "text", "value": " nových zpráv." }
+            ]
+          }
+        }
+      },
+      "female": {
+        "type": "plural",
+        "argument": "count",
+        "cases": {
+          "=0": {
+            "type": "message",
+            "parts": [
+              { "type": "text", "value": "Ona nemá žádné nové zprávy." }
+            ]
+          },
+          "one": {
+            "type": "message",
+            "parts": [
+              { "type": "text", "value": "Ona má " },
+              { "type": "argument", "name": "count" },
+              { "type": "text", "value": " novou zprávu." }
+            ]
+          },
+          "few": {
+            "type": "message",
+            "parts": [
+              { "type": "text", "value": "Ona má " },
+              { "type": "argument", "name": "count" },
+              { "type": "text", "value": " nové zprávy." }
+            ]
+          },
+          "other": {
+            "type": "message",
+            "parts": [
+              { "type": "text", "value": "Ona má " },
+              { "type": "argument", "name": "count" },
+              { "type": "text", "value": " nových zpráv." }
+            ]
+          }
+        }
+      },
+      "other": {
+        "type": "plural",
+        "argument": "count",
+        "cases": {
+          "=0": {
+            "type": "message",
+            "parts": [
+              { "type": "text", "value": "Uživatel nemá žádné nové zprávy." }
+            ]
+          },
+          "one": {
+            "type": "message",
+            "parts": [
+              { "type": "text", "value": "Uživatel má " },
+              { "type": "argument", "name": "count" },
+              { "type": "text", "value": " novou zprávu." }
+            ]
+          },
+          "few": {
+            "type": "message",
+            "parts": [
+              { "type": "text", "value": "Uživatel má " },
+              { "type": "argument", "name": "count" },
+              { "type": "text", "value": " nové zprávy." }
+            ]
+          },
+          "other": {
+            "type": "message",
+            "parts": [
+              { "type": "text", "value": "Uživatel má " },
+              { "type": "argument", "name": "count" },
+              { "type": "text", "value": " nových zpráv." }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -15,7 +15,10 @@ const { data } = await useFetch('/api/projects', {
 
       <div v-if="data.projects.length == 0">Nemáte žádné projekty</div>
 
-      <ItemNavigation v-for="project in data.projects" v-else :key="project._id" :title="project.name" to="/project/123" image="" :caption=project.description />
+      <ItemNavigation 
+        v-for="project in data.projects" 
+        v-else :key="project._id" 
+        :title="project.name" :to="`/project/${project._id}`" image="" :caption=project.description />
 
     </div>
   </NuxtLayout>

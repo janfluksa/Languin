@@ -13,7 +13,8 @@ const config = useRuntimeConfig()
   const whitelist = [
     '/api/auth/login',
     '/api/auth/register',
-    '/api/auth/reset-password'
+    '/api/auth/reset-password',
+    '/api/_nuxt_icon'
   ]
 
   // Získání aktuální cesty
