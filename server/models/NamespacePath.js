@@ -25,4 +25,4 @@ const PathSchema = new mongoose.Schema({
 
 PathSchema.index({ project: 1, path: 1 }, { unique: true })
 
-export default mongoose.model("Path", PathSchema)
+export default mongoose.model("NamespacePath", PathSchema)

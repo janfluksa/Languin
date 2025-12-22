@@ -1,7 +1,7 @@
 // import { getQuery } from 'h3'
 import mongoose from 'mongoose'
 import * as yup from 'yup'
-import Namespace from '~~/server/models/Namespace'
+import Namespace from '~~/server/models/NamespacePath'
 import { createHomePath } from '~~/server/utils/createHomePath.util'
 import { assertProjectAccess } from '~~/server/utils/assertProjectAccess.utils'
 

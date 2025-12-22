@@ -1,8 +1,16 @@
 import Project from '../models/Project'
 import mongoose from 'mongoose'
 
+/**
+ * Verifies that a user has access to a project based on their role.
+ * @param projectId - The ID of the project to check access for
+ * @param userId - The ID of the user requesting access
+ * @param roles - Optional array of roles to check. If empty, checks all roles (admin, copywriter, developer)
+ * @returns The project document if access is granted
+ * @throws {Error} Throws a 403 Forbidden error if the user does not have access to the project
+ */
 export const assertProjectAccess = async (
-  projectId: string,
+  projectId: string | undefined,
   userId: string,
   roles: Array<'admin' | 'copywriter' | 'developer'> = []
 ) => {

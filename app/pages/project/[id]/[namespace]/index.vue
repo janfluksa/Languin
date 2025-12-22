@@ -16,6 +16,12 @@ const { data: project } = await useFetch<Project>(`/api/projects/${projectId}`, 
   }
 })
 
+const { data: path } = await useFetch(`/api/projects/${projectId}/namespace/${namespace}`, {
+  headers: {
+    Authorization: token.value ? `Bearer ${token.value}` : ''
+  }
+})
+
 if (!project) navigateTo('/')
 
 </script>
@@ -25,6 +31,11 @@ if (!project) navigateTo('/')
 	<NuxtLayout name="dashboard">
 
     {{ namespace }}
+
+    <h1>Path:</h1>
+    <div>
+      {{ path }}
+    </div>
 
 		<UPageHeader v-if="project" :title=project.name :description=project.description class="border-0"/>
 	
