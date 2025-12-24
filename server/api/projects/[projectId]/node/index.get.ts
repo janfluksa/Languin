@@ -34,15 +34,35 @@ export default defineEventHandler(async (event) => {
     })
   }
 
-// Get path
-  try {
-    const row = await Namespace.find({
+   try {
+    const node = await Namespace.findOne({
       path: pathStr,
+      project: new mongoose.Types.ObjectId(projectId as string),
+    }).populate(['parent'])
+
+    console.log(`node: ${node}`)
+
+    if (!node) {
+      if (pathStr === "") {
+        return createHomePath(projectId)
+      } else {
+        throw createError({
+          statusCode: 404,
+          statusMessage: 'Path not found'
+        })
+      }
+    }
+
+    const subNodes = await Namespace.find({
+      parent: new mongoose.Types.ObjectId(node._id),
       project: new mongoose.Types.ObjectId(projectId as string),
     })
 
-    if (row.length == 0 && pathStr == "") return createHomePath(projectId)
-    else return row
+    return {
+      node: node,
+      subnodes: subNodes,
+      keys: []
+    }
 
   } catch {
     throw createError({

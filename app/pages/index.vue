@@ -1,10 +1,12 @@
-<script setup>
-const token = useCookie('token')
-const { data } = await useFetch('/api/projects', {
-  headers: {
-    Authorization: token.value ? `Bearer ${token.value}` : ''
-  }
-})
+<script setup lang="ts" generic="T extends any">
+
+interface Project {
+  _id: string,
+  name: string,
+  description: string
+}
+
+const projects = await apiGet<[Project]>('/api/projects')
 
 </script>
 
@@ -13,10 +15,10 @@ const { data } = await useFetch('/api/projects', {
     <div class="flex flex-col gap-4 p-4">
       <h1 class="text-2xl font-bold">Moje projekty</h1>
 
-      <div v-if="data.projects.length == 0">Nemáte žádné projekty</div>
+      <div v-if="!projects">Nemáte žádné projekty</div>
 
       <ItemNavigation 
-        v-for="project in data.projects" 
+        v-for="project in projects" 
         v-else :key="project._id" 
         :title="project.name" :to="`/project/${project._id}`" image="" :caption=project.description />
 

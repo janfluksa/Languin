@@ -17,9 +17,8 @@ export default defineEventHandler(async (event) => {
 
       console.log(projects)
       
-      return { 
-        projects
-      }
+      return projects
+      
 
   } catch {
     throw createError({

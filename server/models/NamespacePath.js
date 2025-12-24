@@ -20,6 +20,12 @@ const PathSchema = new mongoose.Schema({
     index: true
   },
 
+  parent: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "NamespacePath",
+    required: false
+  }
+
 
 }, { timestamps: true })
 

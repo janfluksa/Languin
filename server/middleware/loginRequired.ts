@@ -14,7 +14,9 @@ const config = useRuntimeConfig()
     '/api/auth/login',
     '/api/auth/register',
     '/api/auth/reset-password',
-    '/api/_nuxt_icon'
+    '/api/_nuxt_icon',
+    '/api/_nuxt_icon/lucide.json',
+    '/api/_nuxt_icon/lucide.json?icons=folder-tree%2Clanguages '
   ]
 
   // Získání aktuální cesty
