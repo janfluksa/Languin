@@ -15,15 +15,18 @@ const config = useRuntimeConfig()
     '/api/auth/register',
     '/api/auth/reset-password',
     '/api/_nuxt_icon',
-    '/api/_nuxt_icon/lucide.json',
-    '/api/_nuxt_icon/lucide.json?icons=folder-tree%2Clanguages '
+    '/api/_nuxt_icon/lucide.json'
   ]
 
   // Získání aktuální cesty
-  const path = event.path
+  const path = event.path.split('?')[0]
 
   // Pokud je endpoint ve whitelistu → nic nedělej
-  if (whitelist.includes(path)) {
+  const isWhitelisted = whitelist.some(prefix =>
+    path === prefix || path.startsWith(prefix + '/')
+  )
+
+  if (isWhitelisted) {
     return
   }
 

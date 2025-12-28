@@ -69,20 +69,26 @@ const handleNodeCreated = async ({ newPath }: { newPath: Path }) => {
 <template>
 	<NuxtLayout name="dashboard">
 
-      <UPageHeader v-if="project" :title=project.name :description=project.description class="border-0"/>
+      <div class="flex mb-8 gap-2">
+        <TranslationsBtnAdd @node-created="handleNodeCreated" />
+          <UInput icon="i-lucide-search" size="md" variant="outline" placeholder="Search..." />
 
-      <TranslationsBtnAdd @node-created="handleNodeCreated" />
+      </div>
 
       <div v-if="ns?.node.parent">
-        <UButton icon="lucide-arrow-left" :to="`/project/${ns.node.parent.project}/${ns.node.parent.path}`">{{ ns.node.parent.name }}</UButton>
+        <UButton icon="lucide-arrow-left" variant="link" :to="`/project/${ns.node.parent.project}/space/${ns.node.parent.path}`">{{ ns.node.parent.name }}</UButton>
       </div>
-      
-      
-        <div v-if="ns" >
-          <div  v-for="node in ns.subnodes" :key="node._id">
 
-            <TranslationsNodeContextMenu>
-              <UPageCard :to="`/project/${node.project}/${node.path}`" orientation="horizontal" class="w-1/3">
+      <UPageHeader v-if="project" :title=ns?.node.name class="border-0 mx-3 py-0 pb-8"/>
+
+
+      
+      
+      
+        <div v-if="ns" class="flex flex-wrap gap-4">
+
+            <TranslationsNodeContextMenu v-for="node in ns.subnodes" :key="node._id">
+              <UPageCard :to="`/project/${node.project}/space/${node.path}`" orientation="horizontal" class="w-1/4">
                 <div class="flex justify-start items-center gap-2">
                   <UIcon name="i-lucide-folder"/>
                   <div>{{ node.name }}</div>
@@ -91,8 +97,9 @@ const handleNodeCreated = async ({ newPath }: { newPath: Path }) => {
               </UPageCard>
             </TranslationsNodeContextMenu>
 
-          </div>
         </div>
+
+        <translationsKeyList :project="projectId" :namespace="namespace"/>
     
 
 	</NuxtLayout>

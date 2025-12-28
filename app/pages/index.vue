@@ -20,7 +20,7 @@ const projects = await apiGet<[Project]>('/api/projects')
       <ItemNavigation 
         v-for="project in projects" 
         v-else :key="project._id" 
-        :title="project.name" :to="`/project/${project._id}`" image="" :caption=project.description />
+        :title="project.name" :to="`/project/${project._id}/space/`" image="" :caption=project.description />
 
     </div>
   </NuxtLayout>

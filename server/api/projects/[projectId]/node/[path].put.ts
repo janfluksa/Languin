@@ -1,7 +1,6 @@
 import * as yup from 'yup'
 import NamespacePath from '~~/server/models/NamespacePath'
 import { assertProjectAccess } from '~~/server/utils/assertProjectAccess.utils'
-import mongoose, { type MongooseError } from 'mongoose'
 import { readBody } from 'h3'
 import slugify from '@sindresorhus/slugify'
 
@@ -31,32 +30,41 @@ export default defineEventHandler(async (event) => {
       statusMessage: errorMessage
     })
   }
-
-  const parent = await NamespacePath.findOne({"path": path ? path : ""}) // parent path nebo Home (prázdný)
-      console.log(parent)
-
-  const newPath = new NamespacePath ({
-        project: new mongoose.Types.ObjectId(projectId),
-        parent: parent ? parent._id : null,
-        name,
-        path: path ? `${path}.${slugify(name)}` : `${slugify(name)}`,
-        createdAt: new Date()   // přidáš aktuálního uživatele jako admina
-      })
-
  
-
     // Create path
     try {
 
-      await newPath.save()
+        const existingPath = await NamespacePath.findOne({'path': path}).populate("parent")
 
-      return {
-        success: true,
-        newPath,
-      }
+        if (!existingPath) {
+          throw createError({
+            statusCode: 400,
+            statusMessage: "Path not found"
+          })
+        }
+
+        interface NamespacePathParent {
+          path?: string
+        }
+
+        const parent = existingPath.parent as NamespacePathParent | undefined
+
+        existingPath.name = name
+        existingPath.path = 
+          parent?.path 
+          ? `${parent.path}.${slugify(name)}`
+          : `${slugify(name)}` 
+        existingPath.updatedAt = new Date() 
+
+        existingPath.save()
+
+        return {
+          success: true,
+          path: existingPath,
+        }
 
     } catch (e) {
-      const error = e as MongooseError & { code?: number };
+      const error = e as Error & { code?: number };
         throw createError(error)
     }
 

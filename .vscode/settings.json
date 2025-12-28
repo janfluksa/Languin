@@ -8,5 +8,11 @@
   "tailwindCSS.classAttributes": ["class", "ui"],
   "tailwindCSS.experimental.classRegex": [
     ["ui:\\s*{([^)]*)\\s*}", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
-  ]
+  ],
+  "files.exclude": {
+    ".nuxt": true,
+    ".data": true,
+    ".output": true,
+    "node_modules": true
+  }
 }
