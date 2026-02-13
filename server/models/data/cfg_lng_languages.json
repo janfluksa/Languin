@@ -1,0 +1,636 @@
+[{
+  "_id": {
+    "$oid": "698f93600d97eadd06b6fdea"
+  },
+  "code": "ar",
+  "pluralizationForms": [
+    "zero",
+    "one",
+    "two",
+    "few",
+    "many",
+    "other"
+  ],
+  "direction": "rtl",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f93a00d97eadd06b6fdec"
+  },
+  "code": "az",
+  "pluralizationForms": [
+    "one",
+    "other"
+  ],
+  "direction": "ltr",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f93ac0d97eadd06b6fdee"
+  },
+  "code": "bg",
+  "pluralizationForms": [
+    "one",
+    "other"
+  ],
+  "direction": "ltr",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f93c90d97eadd06b6fdf0"
+  },
+  "code": "bn",
+  "pluralizationForms": [
+    "one",
+    "other"
+  ],
+  "direction": "ltr",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f93d20d97eadd06b6fdf2"
+  },
+  "code": "ca",
+  "pluralizationForms": [
+    "one",
+    "other"
+  ],
+  "direction": "ltr",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f93d90d97eadd06b6fdf4"
+  },
+  "code": "ckb",
+  "pluralizationForms": [
+    "one",
+    "other"
+  ],
+  "direction": "rtl",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f93e10d97eadd06b6fdf6"
+  },
+  "code": "cs",
+  "pluralizationForms": [
+    "one",
+    "few",
+    "many",
+    "other"
+  ],
+  "direction": "ltr",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f93ea0d97eadd06b6fdf8"
+  },
+  "code": "da",
+  "pluralizationForms": [
+    "one",
+    "other"
+  ],
+  "direction": "ltr",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f93f30d97eadd06b6fdfa"
+  },
+  "code": "de",
+  "pluralizationForms": [
+    "one",
+    "other"
+  ],
+  "direction": "ltr",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f93fa0d97eadd06b6fdfc"
+  },
+  "code": "el",
+  "pluralizationForms": [
+    "one",
+    "other"
+  ],
+  "direction": "ltr",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f94010d97eadd06b6fdfe"
+  },
+  "code": "en",
+  "pluralizationForms": [
+    "one",
+    "other"
+  ],
+  "direction": "ltr",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f94090d97eadd06b6fe00"
+  },
+  "code": "es",
+  "pluralizationForms": [
+    "one",
+    "other"
+  ],
+  "direction": "ltr",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f94150d97eadd06b6fe02"
+  },
+  "code": "et",
+  "pluralizationForms": [
+    "one",
+    "other"
+  ],
+  "direction": "ltr",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f941e0d97eadd06b6fe04"
+  },
+  "code": "fa",
+  "pluralizationForms": [
+    "one",
+    "other"
+  ],
+  "direction": "rtl",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f94250d97eadd06b6fe06"
+  },
+  "code": "fi",
+  "pluralizationForms": [
+    "one",
+    "other"
+  ],
+  "direction": "ltr",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f942d0d97eadd06b6fe08"
+  },
+  "code": "fr",
+  "pluralizationForms": [
+    "one",
+    "other"
+  ],
+  "direction": "ltr",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f94350d97eadd06b6fe0a"
+  },
+  "code": "gl",
+  "pluralizationForms": [
+    "one",
+    "other"
+  ],
+  "direction": "ltr",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f943d0d97eadd06b6fe0c"
+  },
+  "code": "he",
+  "pluralizationForms": [
+    "one",
+    "two",
+    "many",
+    "other"
+  ],
+  "direction": "rtl",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f94450d97eadd06b6fe0e"
+  },
+  "code": "hi",
+  "pluralizationForms": [
+    "one",
+    "other"
+  ],
+  "direction": "ltr",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f944c0d97eadd06b6fe10"
+  },
+  "code": "hr",
+  "pluralizationForms": [
+    "one",
+    "few",
+    "other"
+  ],
+  "direction": "ltr",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f94540d97eadd06b6fe12"
+  },
+  "code": "hu",
+  "pluralizationForms": [
+    "one",
+    "other"
+  ],
+  "direction": "ltr",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f945b0d97eadd06b6fe14"
+  },
+  "code": "hy",
+  "pluralizationForms": [
+    "one",
+    "other"
+  ],
+  "direction": "ltr",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f94620d97eadd06b6fe16"
+  },
+  "code": "id",
+  "pluralizationForms": [
+    "other"
+  ],
+  "direction": "ltr",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f946a0d97eadd06b6fe18"
+  },
+  "code": "it",
+  "pluralizationForms": [
+    "one",
+    "other"
+  ],
+  "direction": "ltr",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f94710d97eadd06b6fe1a"
+  },
+  "code": "ja",
+  "pluralizationForms": [
+    "other"
+  ],
+  "direction": "ltr",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f94780d97eadd06b6fe1c"
+  },
+  "code": "ka",
+  "pluralizationForms": [
+    "one",
+    "other"
+  ],
+  "direction": "ltr",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f947f0d97eadd06b6fe1e"
+  },
+  "code": "kk",
+  "pluralizationForms": [
+    "one",
+    "other"
+  ],
+  "direction": "ltr",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f94860d97eadd06b6fe20"
+  },
+  "code": "km",
+  "pluralizationForms": [
+    "other"
+  ],
+  "direction": "ltr",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f948c0d97eadd06b6fe22"
+  },
+  "code": "ko",
+  "pluralizationForms": [
+    "other"
+  ],
+  "direction": "ltr",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f94930d97eadd06b6fe24"
+  },
+  "code": "ky",
+  "pluralizationForms": [
+    "one",
+    "other"
+  ],
+  "direction": "ltr",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f949a0d97eadd06b6fe26"
+  },
+  "code": "lb",
+  "pluralizationForms": [
+    "one",
+    "other"
+  ],
+  "direction": "ltr",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f94a00d97eadd06b6fe28"
+  },
+  "code": "lt",
+  "pluralizationForms": [
+    "one",
+    "few",
+    "many",
+    "other"
+  ],
+  "direction": "ltr",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f94a70d97eadd06b6fe2a"
+  },
+  "code": "mn",
+  "pluralizationForms": [
+    "one",
+    "other"
+  ],
+  "direction": "ltr",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f94ad0d97eadd06b6fe2c"
+  },
+  "code": "ms",
+  "pluralizationForms": [
+    "other"
+  ],
+  "direction": "ltr",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f94bb0d97eadd06b6fe2e"
+  },
+  "code": "nb",
+  "pluralizationForms": [
+    "one",
+    "other"
+  ],
+  "direction": "ltr",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f94c40d97eadd06b6fe30"
+  },
+  "code": "nl",
+  "pluralizationForms": [
+    "one",
+    "other"
+  ],
+  "direction": "ltr",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f94cf0d97eadd06b6fe34"
+  },
+  "code": "pl",
+  "pluralizationForms": [
+    "one",
+    "few",
+    "many",
+    "other"
+  ],
+  "direction": "ltr",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f94d70d97eadd06b6fe36"
+  },
+  "code": "pt",
+  "pluralizationForms": [
+    "one",
+    "other"
+  ],
+  "direction": "ltr",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f94de0d97eadd06b6fe38"
+  },
+  "code": "ro",
+  "pluralizationForms": [
+    "one",
+    "few",
+    "other"
+  ],
+  "direction": "ltr",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f94e40d97eadd06b6fe3a"
+  },
+  "code": "ru",
+  "pluralizationForms": [
+    "one",
+    "few",
+    "many",
+    "other"
+  ],
+  "direction": "ltr",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f94eb0d97eadd06b6fe3c"
+  },
+  "code": "sk",
+  "pluralizationForms": [
+    "one",
+    "few",
+    "many",
+    "other"
+  ],
+  "direction": "ltr",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f94f20d97eadd06b6fe3e"
+  },
+  "code": "sl",
+  "pluralizationForms": [
+    "one",
+    "two",
+    "few",
+    "other"
+  ],
+  "direction": "ltr",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f94fa0d97eadd06b6fe40"
+  },
+  "code": "sq",
+  "pluralizationForms": [
+    "one",
+    "other"
+  ],
+  "direction": "ltr",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f95010d97eadd06b6fe42"
+  },
+  "code": "sv",
+  "pluralizationForms": [
+    "one",
+    "other"
+  ],
+  "direction": "ltr",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f95070d97eadd06b6fe44"
+  },
+  "code": "th",
+  "pluralizationForms": [
+    "other"
+  ],
+  "direction": "ltr",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f950d0d97eadd06b6fe46"
+  },
+  "code": "tg",
+  "pluralizationForms": [
+    "one",
+    "other"
+  ],
+  "direction": "ltr",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f95130d97eadd06b6fe48"
+  },
+  "code": "tr",
+  "pluralizationForms": [
+    "one",
+    "other"
+  ],
+  "direction": "ltr",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f951b0d97eadd06b6fe4a"
+  },
+  "code": "ug",
+  "pluralizationForms": [
+    "one",
+    "other"
+  ],
+  "direction": "rtl",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f95210d97eadd06b6fe4c"
+  },
+  "code": "ur",
+  "pluralizationForms": [
+    "one",
+    "other"
+  ],
+  "direction": "rtl",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f95280d97eadd06b6fe4e"
+  },
+  "code": "uz",
+  "pluralizationForms": [
+    "one",
+    "other"
+  ],
+  "direction": "ltr",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f952e0d97eadd06b6fe50"
+  },
+  "code": "vi",
+  "pluralizationForms": [
+    "other"
+  ],
+  "direction": "ltr",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698f95350d97eadd06b6fe52"
+  },
+  "code": "zh",
+  "pluralizationForms": [
+    "other"
+  ],
+  "direction": "ltr",
+  "__v": 0
+}]

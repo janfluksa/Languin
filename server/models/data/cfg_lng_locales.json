@@ -1,0 +1,765 @@
+[{
+  "_id": {
+    "$oid": "6988b780c76b53004acceeb6"
+  },
+  "language": "ar",
+  "code": "ar",
+  "name": "العربية (Saudi-Arabien)",
+  "icon": "i-cif-sa"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceeb7"
+  },
+  "language": "az",
+  "code": "az",
+  "name": "Azərbaycanca (Azərbaycan)",
+  "icon": "i-cif-az"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceeb8"
+  },
+  "language": "bg",
+  "code": "bg",
+  "name": "Български (България)",
+  "icon": "i-cif-bg"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceeb9"
+  },
+  "language": "bn",
+  "code": "bn",
+  "name": "বাংলা (বাংলাদেশ)",
+  "icon": "i-cif-bd"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceeba"
+  },
+  "language": "ca",
+  "code": "ca",
+  "name": "Català (Espanya)",
+  "icon": "i-cif-es"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceebb"
+  },
+  "language": "ckb",
+  "code": "ckb",
+  "name": "کوردی (العراق)",
+  "icon": "i-cif-un"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceebc"
+  },
+  "language": "cs",
+  "code": "cs",
+  "name": "Čeština (Česká republika)",
+  "icon": "i-cif-cz"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceebd"
+  },
+  "language": "da",
+  "code": "da",
+  "name": "Dansk (Danmark)",
+  "icon": "i-cif-dk"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceebe"
+  },
+  "language": "de",
+  "code": "de",
+  "name": "Deutsch (International)",
+  "icon": "i-cif-de"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceebf"
+  },
+  "language": "de",
+  "code": "de-DE",
+  "name": "Deutsch (Deutschland)",
+  "icon": "i-cif-de"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceec0"
+  },
+  "language": "de",
+  "code": "de-AT",
+  "name": "Deutsch (Österreich)",
+  "icon": "i-cif-at"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceec1"
+  },
+  "language": "de",
+  "code": "de-CH",
+  "name": "Deutsch (Schweiz)",
+  "icon": "i-cif-ch"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceec2"
+  },
+  "language": "de",
+  "code": "de-LI",
+  "name": "Deutsch (Liechtenstein)",
+  "icon": "i-cif-li"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceec3"
+  },
+  "language": "de",
+  "code": "de-LU",
+  "name": "Deutsch (Luxemburg)",
+  "icon": "i-cif-lu"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceec4"
+  },
+  "language": "de",
+  "code": "de-BE",
+  "name": "Deutsch (Belgien)",
+  "icon": "i-cif-be"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceec5"
+  },
+  "language": "de",
+  "code": "de-IT",
+  "name": "Deutsch (Südtirol)",
+  "icon": "i-cif-it"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceec6"
+  },
+  "language": "el",
+  "code": "el",
+  "name": "Ελληνικά (Ελλάδα)",
+  "icon": "i-cif-gr"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceec7"
+  },
+  "language": "en",
+  "code": "en",
+  "name": "English (International)",
+  "icon": "i-cif-gb"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceec8"
+  },
+  "language": "en",
+  "code": "en-GB",
+  "name": "English (United Kingdom)",
+  "icon": "i-cif-gb"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceec9"
+  },
+  "language": "en",
+  "code": "en-IE",
+  "name": "English (Ireland)",
+  "icon": "i-cif-ie"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceeca"
+  },
+  "language": "en",
+  "code": "en-MT",
+  "name": "English (Malta)",
+  "icon": "i-cif-mt"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceecb"
+  },
+  "language": "en",
+  "code": "en-US",
+  "name": "English (United States)",
+  "icon": "i-cif-us"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceecc"
+  },
+  "language": "en",
+  "code": "en-CA",
+  "name": "English (Canada)",
+  "icon": "i-cif-ca"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceecd"
+  },
+  "language": "en",
+  "code": "en-JM",
+  "name": "English (Jamaica)",
+  "icon": "i-cif-jm"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceece"
+  },
+  "language": "en",
+  "code": "en-TT",
+  "name": "English (Trinidad and Tobago)",
+  "icon": "i-cif-tt"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceecf"
+  },
+  "language": "en",
+  "code": "en-BZ",
+  "name": "English (Belize)",
+  "icon": "i-cif-bz"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceed0"
+  },
+  "language": "en",
+  "code": "en-GY",
+  "name": "English (Guyana)",
+  "icon": "i-cif-gy"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceed1"
+  },
+  "language": "en",
+  "code": "en-ZA",
+  "name": "English (South Africa)",
+  "icon": "i-cif-za"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceed2"
+  },
+  "language": "en",
+  "code": "en-NG",
+  "name": "English (Nigeria)",
+  "icon": "i-cif-ng"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceed3"
+  },
+  "language": "en",
+  "code": "en-GH",
+  "name": "English (Ghana)",
+  "icon": "i-cif-gh"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceed4"
+  },
+  "language": "en",
+  "code": "en-KE",
+  "name": "English (Kenya)",
+  "icon": "i-cif-ke"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceed5"
+  },
+  "language": "en",
+  "code": "en-ZW",
+  "name": "English (Zimbabwe)",
+  "icon": "i-cif-zw"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceed6"
+  },
+  "language": "en",
+  "code": "en-IN",
+  "name": "English (India)",
+  "icon": "i-cif-in"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceed7"
+  },
+  "language": "en",
+  "code": "en-SG",
+  "name": "English (Singapore)",
+  "icon": "i-cif-sg"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceed8"
+  },
+  "language": "en",
+  "code": "en-PH",
+  "name": "English (Philippines)",
+  "icon": "i-cif-ph"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceed9"
+  },
+  "language": "en",
+  "code": "en-HK",
+  "name": "English (Hong Kong)",
+  "icon": "i-cif-hk"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceeda"
+  },
+  "language": "en",
+  "code": "en-MY",
+  "name": "English (Malaysia)",
+  "icon": "i-cif-my"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceedb"
+  },
+  "language": "en",
+  "code": "en-PK",
+  "name": "English (Pakistan)",
+  "icon": "i-cif-pk"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceedc"
+  },
+  "language": "en",
+  "code": "en-AU",
+  "name": "English (Australia)",
+  "icon": "i-cif-au"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceedd"
+  },
+  "language": "en",
+  "code": "en-NZ",
+  "name": "English (New Zealand)",
+  "icon": "i-cif-nz"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceede"
+  },
+  "language": "en",
+  "code": "en-PG",
+  "name": "English (Papua New Guinea)",
+  "icon": "i-cif-pg"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceedf"
+  },
+  "language": "es",
+  "code": "es",
+  "name": "Español (España)",
+  "icon": "i-cif-es"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceee0"
+  },
+  "language": "et",
+  "code": "et",
+  "name": "Eesti (Eesti)",
+  "icon": "i-cif-ee"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceee1"
+  },
+  "language": "fa",
+  "code": "fa-IR",
+  "name": "فارسی (ایران)",
+  "icon": "i-cif-ir"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceee2"
+  },
+  "language": "fi",
+  "code": "fi",
+  "name": "Suomeksi (Suomi)",
+  "icon": "i-cif-fi"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceee3"
+  },
+  "language": "fr",
+  "code": "fr",
+  "name": "Français (France)",
+  "icon": "i-cif-fr"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceee4"
+  },
+  "language": "gl",
+  "code": "gl",
+  "name": "Galego (España)",
+  "icon": "i-cif-es"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceee5"
+  },
+  "language": "he",
+  "code": "he",
+  "name": "עברית (ישראל)",
+  "icon": "i-cif-il"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceee6"
+  },
+  "language": "hi",
+  "code": "hi",
+  "name": "हिन्दी (भारत)",
+  "icon": "i-cif-in"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceee7"
+  },
+  "language": "hr",
+  "code": "hr",
+  "name": "Hrvatski (Hrvatska)",
+  "icon": "i-cif-hr"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceee8"
+  },
+  "language": "hu",
+  "code": "hu",
+  "name": "Magyar (Magyarország)",
+  "icon": "i-cif-hu"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceee9"
+  },
+  "language": "hy",
+  "code": "hy",
+  "name": "Հայերեն (Հայաստան)",
+  "icon": "i-cif-am"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceeea"
+  },
+  "language": "id",
+  "code": "id",
+  "name": "Bahasa Indonesia (Indonesia)",
+  "icon": "i-cif-id"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceeeb"
+  },
+  "language": "it",
+  "code": "it",
+  "name": "Italiano (Italia)",
+  "icon": "i-cif-it"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceeec"
+  },
+  "language": "ja",
+  "code": "ja",
+  "name": "日本語 (日本)",
+  "icon": "i-cif-jp"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceeed"
+  },
+  "language": "ka",
+  "code": "ka",
+  "name": "ქართული (საქართველო)",
+  "icon": "i-cif-ge"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceeee"
+  },
+  "language": "kk",
+  "code": "kk",
+  "name": "Қазақша (Қазақстан)",
+  "icon": "i-cif-kz"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceeef"
+  },
+  "language": "km",
+  "code": "km",
+  "name": "ភាសាខ្មែរ (កម្ពុជា)",
+  "icon": "i-cif-kh"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceef0"
+  },
+  "language": "ko",
+  "code": "ko",
+  "name": "한국어 (대한민국)",
+  "icon": "i-cif-kr"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceef1"
+  },
+  "language": "ky",
+  "code": "ky",
+  "name": "Кыргызча (Кыргызстан)",
+  "icon": "i-cif-kg"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceef2"
+  },
+  "language": "lb",
+  "code": "lb",
+  "name": "Lëtzebuergesch (Luxemburg)",
+  "icon": "i-cif-lu"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceef3"
+  },
+  "language": "lt",
+  "code": "lt",
+  "name": "Lietuvių (Lietuva)",
+  "icon": "i-cif-lt"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceef4"
+  },
+  "language": "mn",
+  "code": "mn",
+  "name": "Монгол (Монгол Улс)",
+  "icon": "i-cif-mn"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceef5"
+  },
+  "language": "ms",
+  "code": "ms",
+  "name": "Melayu (Malaysia)",
+  "icon": "i-cif-my"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceef6"
+  },
+  "language": "nb",
+  "code": "nb-NO",
+  "name": "Norsk Bokmål (Norge)",
+  "icon": "i-cif-no"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceef7"
+  },
+  "language": "nl",
+  "code": "nl",
+  "name": "Nederlands (Nederland)",
+  "icon": "i-cif-nl"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceef8"
+  },
+  "language": "pl",
+  "code": "pl",
+  "name": "Polski (Polska)",
+  "icon": "i-cif-pl"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceef9"
+  },
+  "language": "pt",
+  "code": "pt",
+  "name": "Português (Portugal)",
+  "icon": "i-cif-pt"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceefa"
+  },
+  "language": "pt",
+  "code": "pt-BR",
+  "name": "Português - Brasil (Brasil)",
+  "icon": "i-cif-br"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceefb"
+  },
+  "language": "ro",
+  "code": "ro",
+  "name": "Română (România)",
+  "icon": "i-cif-ro"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceefc"
+  },
+  "language": "ru",
+  "code": "ru",
+  "name": "Русский (Россия)",
+  "icon": "i-cif-ru"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceefd"
+  },
+  "language": "sk",
+  "code": "sk",
+  "name": "Slovenčina (Slovensko)",
+  "icon": "i-cif-sk"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceefe"
+  },
+  "language": "sl",
+  "code": "sl",
+  "name": "Slovenščina (Slovenija)",
+  "icon": "i-cif-si"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004acceeff"
+  },
+  "language": "sq",
+  "code": "sq",
+  "name": "Shqip (Shqipëri)",
+  "icon": "i-cif-al"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004accef00"
+  },
+  "language": "sv",
+  "code": "sv",
+  "name": "Svenska (Sverige)",
+  "icon": "i-cif-se"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004accef01"
+  },
+  "language": "th",
+  "code": "th",
+  "name": "ไทย (ประเทศไทย)",
+  "icon": "i-cif-th"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004accef02"
+  },
+  "language": "tj",
+  "code": "tj",
+  "name": "Тоҷикӣ (Тоҷикистон)",
+  "icon": "i-cif-tj"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004accef03"
+  },
+  "language": "tr",
+  "code": "tr",
+  "name": "Türkçe (Türkiye)",
+  "icon": "i-cif-tr"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004accef04"
+  },
+  "language": "ug",
+  "code": "ug-CN",
+  "name": "ئۇيغۇرچە (جۇڭگو)",
+  "icon": "i-cif-cn"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004accef05"
+  },
+  "language": "uk",
+  "code": "uk",
+  "name": "Українська (Україна)",
+  "icon": "i-cif-ua"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004accef06"
+  },
+  "language": "ur",
+  "code": "ur",
+  "name": "اردو (پاکستان)",
+  "icon": "i-cif-pk"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004accef07"
+  },
+  "language": "uz",
+  "code": "uz",
+  "name": "Oʻzbek (Oʻzbekiston)",
+  "icon": "i-cif-uz"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004accef08"
+  },
+  "language": "vi",
+  "code": "vi",
+  "name": "Tiếng Việt (Việt Nam)",
+  "icon": "i-cif-vn"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004accef09"
+  },
+  "language": "zh-CN",
+  "code": "zh-CN",
+  "name": "简体中文 (中国)",
+  "icon": "i-cif-cn"
+},
+{
+  "_id": {
+    "$oid": "6988b780c76b53004accef0a"
+  },
+  "language": "zh-TW",
+  "code": "zh-TW",
+  "name": "繁體中文 (臺灣)",
+  "icon": "i-cif-tw"
+}]

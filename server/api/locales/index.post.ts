@@ -1,23 +1,17 @@
 import { readBody } from 'h3'
-import Locale from '~~/server/models/Locale'
+import SettingsLocale from '~~/server/models/Cfg_Lng_Locale'
 
 export default defineEventHandler(async (event) => {
 
   // Načtení payloadu
-  const { code, direction, nativeName, nativeCountry, localizedNames, pluralization, flag } = await readBody(event) || {}
-  
-  
-
+  const { language, code, name, icon } = await readBody(event) || {}
 
   // Vytvoření nového objektu Projekt 
-  const locale = new Locale({
-    code: code, 
-    direction: direction, 
-    nativeName, 
-    nativeCountry, 
-    flag: flag.icon,
-    localizedNames: localizedNames, 
-    pluralization: { type: 'cldr', forms: pluralization }
+  const locale = new SettingsLocale({
+    language, 
+    code, 
+    name, 
+    icon
   })
 
   try {
