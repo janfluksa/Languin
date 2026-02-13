@@ -13,11 +13,16 @@ const projects = await apiGet<[Project]>('/api/projects')
 <template>
   <NuxtLayout name="ground">
     <div class="flex flex-col gap-4 p-4">
-      <h1 class="text-2xl font-bold">Moje projekty</h1>
+
+      
+      <div class="flex justify-between">
+        <h1 class="text-2xl font-bold">My projects</h1>
+        <UButton icon="i-lucide-plus" color="neutral" to="/create-project" size="md">New</UButton>
+      </div>
 
       <div v-if="!projects">Nemáte žádné projekty</div>
 
-      <ItemNavigation 
+      <ItemNavigationCard 
         v-for="project in projects" 
         v-else :key="project._id" 
         :title="project.name" :to="`/project/${project._id}/space/`" image="" :caption=project.description />

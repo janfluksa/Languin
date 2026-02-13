@@ -1,0 +1,38 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+      "label": "dev",
+			"type": "npm",
+			"script": "dev",
+			"group": {
+        "kind": "build"
+      },
+			"problemMatcher": [],
+		},
+    {
+      "label": "browse",
+      "type": "shell",
+      "command": "open http://localhost:3000",
+      "problemMatcher": [],
+			"presentation": {
+				"reveal": "never",
+				"panel": "shared",
+				"showReuseMessage": false,
+				"clear": false
+			}
+    },
+    {
+      "label": "dev + browser",
+      "dependsOn": [
+        "dev",
+        "browse"
+      ],
+      "dependsOrder": "parallel",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+	]
+}

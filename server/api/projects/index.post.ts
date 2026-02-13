@@ -6,12 +6,13 @@ import Project from '~~/server/models/Project'
 const projectSchema = yup.object({
   name: yup.string().required('Project name is required'),
   description: yup.string().required('Description is required'),
+  locale: yup.string().required('Default locale is required'),
 })
 
 export default defineEventHandler(async (event) => {
 
   // Načtení payloadu
-  const { name, description } = await readBody(event) || {}
+  const { name, description, locale } = await readBody(event) || {}
   
   // Validace
   try {
@@ -28,6 +29,7 @@ export default defineEventHandler(async (event) => {
   const project = await Project.create({
     name,
     description,
+    defaultLocale: locale,
     admins: [event.context.auth.user.id],
     createdAt: new Date()   // přidáš aktuálního uživatele jako admina
   })

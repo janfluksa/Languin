@@ -45,24 +45,11 @@ const handleNodeCreated = ({ newPath }: { newPath: Path }) => {
 <template>
   <div>
 
-    <UDropdownMenu
-    :items="items"
-    :content="{
-      align: 'start',
-      side: 'bottom',
-      sideOffset: 8
-    }"
-    :ui="{
-      content: 'w-48'
-    }"
-  >
-    <UButton label="New" color="neutral" icon="lucide-plus" variant="outline"/>
-  </UDropdownMenu>
+    <UDropdownMenu :items="items" :content="{ align: 'start', side: 'bottom', sideOffset: 8 }" >
+      <UButton label="New" color="neutral" icon="lucide-plus" variant="outline"/>
+    </UDropdownMenu>
 
-  <TranslationsNodeCreateModalForm v-model:open="openModalNewNode" @success="handleNodeCreated"/>
-        
-
+    <TranslationsNodeCreateModalForm v-model:open="openModalNewNode" @success="handleNodeCreated"/>
     
-
   </div>
 </template>

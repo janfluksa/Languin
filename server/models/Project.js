@@ -10,6 +10,14 @@ const ProjectSchema = mongoose.Schema({
 		type: String,
 		required: true,
 	},
+	defaultLocale: {
+		type: mongoose.Schema.Types.ObjectId,
+		ref: "Language",
+	},
+	locales: [{
+		type: mongoose.Schema.Types.ObjectId,
+		ref: "Language",
+	}],
 	admins: [{
 		type: mongoose.Schema.Types.ObjectId,
 		ref: "User",

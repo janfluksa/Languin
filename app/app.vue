@@ -5,6 +5,6 @@
 <template>
   <UApp>
     <NuxtLoadingIndicator />
-    <NuxtPage :key="$route.fullPath" />
+    <NuxtPage />
   </UApp>
 </template>

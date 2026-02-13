@@ -45,6 +45,9 @@ const onSubmit = async (event: FormSubmitEvent<Schema>) => {
 				useCookie('email').value = response._data.email
 				useCookie('id').value = response._data.id
 
+				// Vymazat formulář
+				handleResetForm()
+
 				navigateTo('/')
 			}
 
@@ -62,6 +65,10 @@ const onSubmit = async (event: FormSubmitEvent<Schema>) => {
 		}
 }
 
+const handleResetForm = () => {
+		state.email = undefined
+		state.password = undefined
+}
 
 </script>
 

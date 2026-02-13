@@ -1,6 +1,7 @@
 <script setup lang="ts">
 
-defineProps(
+
+const props = defineProps(
   {
     'title': {
       type: String, 
@@ -11,8 +12,8 @@ defineProps(
       default: null 
     },
     'value': {
-      type: String, 
-      default: null 
+      type: Boolean, 
+      default: false 
     },
     'message': {
       type: String, 
@@ -37,6 +38,12 @@ defineProps(
   }
 )
 
+const switchValue = ref(true)
+
+switchValue.value = props.value
+
+
+
 
 </script>
 
@@ -44,17 +51,20 @@ defineProps(
   <div class="item">
     <ULink
     :to="to"
-    class="hover:bg-muted w-full group block ps-3 pe-3 py-3 transition"
+    class="hover:bg-muted w-full group block ps-3 pe-0 py-1.5 transition"
   >
       <div class="flex items-center gap-3">
 
-        <UIcon v-if="icon" :name="icon" class="text-neutral-500 group-hover:text-primary max-w-5" />
-
+        <UIcon v-if="icon" :name="icon" class="text-neutral-500 group-hover:text-primary" />
         <div class="flex grow flex-col">
 
           <div class="flex grow justify-between">
-            <div class="text-sm font-semibold">{{ title }}</div>
-            <div v-if="value" class="text-sm text-neutral-400">{{ value }}</div>
+            <div class="text-sm font-semibold content-center">{{ title }}</div>
+
+            <div class="text-sm text-neutral-400 pe-1 w-2/3">
+              <slot />
+            </div>
+
           </div>
 
           <div v-if="caption" class="text-md text-start text-neutral-500">{{ caption }}</div>
@@ -76,9 +86,6 @@ defineProps(
 
         </div>
 
-        <div class="flex flex-col justify-center">
-          <UIcon name="i-lucide-chevron-right" class="size-5" />
-        </div>
       </div>
     </ULink>
   </div>
