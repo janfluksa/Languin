@@ -1,5 +1,24 @@
 import mongoose from 'mongoose'
 
+const TrLngSchema = mongoose.Schema({
+	code: {
+		type: String,
+		required: true,
+	},
+	icon: {
+		type: String,
+		required: true,
+	},
+	name: {
+		type: String,
+		required: true,
+	},
+	fallback: {
+		type: String,
+		required: true,
+	},
+})
+
 const ProjectSchema = mongoose.Schema({
    
 	name: {
@@ -8,15 +27,13 @@ const ProjectSchema = mongoose.Schema({
 	},
 	description: {
 		type: String,
-		required: true,
+		required: false,
 	},
-	defaultLocale: {
-		type: mongoose.Schema.Types.ObjectId,
-		ref: "Language",
+	defaultTrLng: {
+		type: TrLngSchema,
 	},
-	locales: [{
-		type: mongoose.Schema.Types.ObjectId,
-		ref: "Language",
+	otherTrLngs: [{
+		type: [TrLngSchema],
 	}],
 	admins: [{
 		type: mongoose.Schema.Types.ObjectId,

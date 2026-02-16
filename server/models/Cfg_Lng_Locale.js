@@ -1,21 +1,18 @@
 import mongoose from 'mongoose'
 
 
-const SettingsLocaleSchema = new mongoose.Schema(
+const LocaleSchema = new mongoose.Schema(
   {
     // BCP-47, např. "cs", "en-US", "de"
 
     language: {
-      type: String,
-      required: true, // "Deutsch", "Čeština"
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "cfg_lng_languages",
     },
 
     code: {
       type: String,
-      required: true,
-      unique: true,
-      index: true,
-      trim: true,
+      required: true, // "Deutsch", "Čeština"
     },
 
     name: {
@@ -31,4 +28,4 @@ const SettingsLocaleSchema = new mongoose.Schema(
   }
 )
 
-export default mongoose.model('cfg_lng_locale', SettingsLocaleSchema)
+export default mongoose.model('cfg_lng_locale', LocaleSchema)

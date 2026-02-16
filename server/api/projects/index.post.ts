@@ -1,26 +1,23 @@
 import { readBody } from 'h3'
 import * as yup from 'yup'
+import Cfg_Lng_Locale from '~~/server/models/Cfg_Lng_Locale'
 import Project from '~~/server/models/Project'
 
 // Schéma pro validaci yup
 const projectSchema = yup.object({
   name: yup.string().required('Project name is required'),
-  description: yup.string().required('Description is required'),
-  locale: yup.string().required('Locale is required'),
+  defaultLocaleCode: yup.string().required('Locale is required'),
 })
 
 export default defineEventHandler(async (event) => {
 
   // Načtení payloadu
-  const { name, description, locale } = await readBody(event) || {}
+  const { name, description, defaultLocaleCode, otherLocalesCodes } = await readBody(event) || {}
 
-  console.log(name)
-  console.log(description)
-  console.log(locale)
   
   // Validace
   try {
-    await projectSchema.validate({name, description, locale}, { abortEarly: false })
+    await projectSchema.validate({name, description, defaultLocaleCode}, { abortEarly: false })
   } catch (err) {
     const errorMessage = err instanceof yup.ValidationError ? err.errors.join(', ') : 'Validation failed'
     throw createError({
@@ -29,19 +26,27 @@ export default defineEventHandler(async (event) => {
     })
   }
 
+  console.log(defaultLocaleCode)
+const defaultLocale = await Cfg_Lng_Locale.findOne({"code":"en"})
+  .populate('language')
+
+console.log(defaultLocale);
+
   // Vytvoření nového objektu Projekt 
-  const project = await Project.create({
+  const project = new Project({
     name,
     description,
-    defaultLocale: locale,
+    defaultLocale: defaultLocale,
+    otherLocalesCodes: otherLocalesCodes, 
     admins: [event.context.auth.user.id],
     createdAt: new Date()   // přidáš aktuálního uživatele jako admina
   })
 
   try {
-    await project.save()
+    // await project.save()
     return {
       success: true,
+      locale: defaultLocale,
       project,
     }
   } 
