@@ -2,7 +2,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceeb6"
   },
-  "language": "ar",
+  "language": {
+    "$oid": "698f93600d97eadd06b6fdea"
+  },
   "code": "ar",
   "name": "العربية (Saudi-Arabien)",
   "icon": "i-cif-sa"
@@ -11,7 +13,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceeb7"
   },
-  "language": "az",
+  "language": {
+    "$oid": "698f93a00d97eadd06b6fdec"
+  },
   "code": "az",
   "name": "Azərbaycanca (Azərbaycan)",
   "icon": "i-cif-az"
@@ -20,7 +24,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceeb8"
   },
-  "language": "bg",
+  "language": {
+    "$oid": "698f93ac0d97eadd06b6fdee"
+  },
   "code": "bg",
   "name": "Български (България)",
   "icon": "i-cif-bg"
@@ -29,7 +35,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceeb9"
   },
-  "language": "bn",
+  "language": {
+    "$oid": "698f93c90d97eadd06b6fdf0"
+  },
   "code": "bn",
   "name": "বাংলা (বাংলাদেশ)",
   "icon": "i-cif-bd"
@@ -38,7 +46,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceeba"
   },
-  "language": "ca",
+  "language": {
+    "$oid": "698f93d20d97eadd06b6fdf2"
+  },
   "code": "ca",
   "name": "Català (Espanya)",
   "icon": "i-cif-es"
@@ -47,7 +57,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceebb"
   },
-  "language": "ckb",
+  "language": {
+    "$oid": "698f93d90d97eadd06b6fdf4"
+  },
   "code": "ckb",
   "name": "کوردی (العراق)",
   "icon": "i-cif-un"
@@ -56,7 +68,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceebc"
   },
-  "language": "cs",
+  "language": {
+    "$oid": "698f93e10d97eadd06b6fdf6"
+  },
   "code": "cs",
   "name": "Čeština (Česká republika)",
   "icon": "i-cif-cz"
@@ -65,7 +79,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceebd"
   },
-  "language": "da",
+  "language": {
+    "$oid": "698f93ea0d97eadd06b6fdf8"
+  },
   "code": "da",
   "name": "Dansk (Danmark)",
   "icon": "i-cif-dk"
@@ -74,7 +90,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceebe"
   },
-  "language": "de",
+  "language": {
+    "$oid": "698f93f30d97eadd06b6fdfa"
+  },
   "code": "de",
   "name": "Deutsch (International)",
   "icon": "i-cif-de"
@@ -83,7 +101,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceebf"
   },
-  "language": "de",
+  "language": {
+    "$oid": "698f93f30d97eadd06b6fdfa"
+  },
   "code": "de-DE",
   "name": "Deutsch (Deutschland)",
   "icon": "i-cif-de"
@@ -92,7 +112,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceec0"
   },
-  "language": "de",
+  "language": {
+    "$oid": "698f93f30d97eadd06b6fdfa"
+  },
   "code": "de-AT",
   "name": "Deutsch (Österreich)",
   "icon": "i-cif-at"
@@ -101,7 +123,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceec1"
   },
-  "language": "de",
+  "language": {
+    "$oid": "698f93f30d97eadd06b6fdfa"
+  },
   "code": "de-CH",
   "name": "Deutsch (Schweiz)",
   "icon": "i-cif-ch"
@@ -110,7 +134,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceec2"
   },
-  "language": "de",
+  "language": {
+    "$oid": "698f93f30d97eadd06b6fdfa"
+  },
   "code": "de-LI",
   "name": "Deutsch (Liechtenstein)",
   "icon": "i-cif-li"
@@ -119,7 +145,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceec3"
   },
-  "language": "de",
+  "language": {
+    "$oid": "698f93f30d97eadd06b6fdfa"
+  },
   "code": "de-LU",
   "name": "Deutsch (Luxemburg)",
   "icon": "i-cif-lu"
@@ -128,7 +156,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceec4"
   },
-  "language": "de",
+  "language": {
+    "$oid": "698f93f30d97eadd06b6fdfa"
+  },
   "code": "de-BE",
   "name": "Deutsch (Belgien)",
   "icon": "i-cif-be"
@@ -137,7 +167,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceec5"
   },
-  "language": "de",
+  "language": {
+    "$oid": "698f93f30d97eadd06b6fdfa"
+  },
   "code": "de-IT",
   "name": "Deutsch (Südtirol)",
   "icon": "i-cif-it"
@@ -146,7 +178,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceec6"
   },
-  "language": "el",
+  "language": {
+    "$oid": "698f93fa0d97eadd06b6fdfc"
+  },
   "code": "el",
   "name": "Ελληνικά (Ελλάδα)",
   "icon": "i-cif-gr"
@@ -155,7 +189,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceec7"
   },
-  "language": "en",
+  "language": {
+    "$oid": "698f94010d97eadd06b6fdfe"
+  },
   "code": "en",
   "name": "English (International)",
   "icon": "i-cif-gb"
@@ -164,7 +200,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceec8"
   },
-  "language": "en",
+  "language": {
+    "$oid": "698f94010d97eadd06b6fdfe"
+  },
   "code": "en-GB",
   "name": "English (United Kingdom)",
   "icon": "i-cif-gb"
@@ -173,7 +211,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceec9"
   },
-  "language": "en",
+  "language": {
+    "$oid": "698f94010d97eadd06b6fdfe"
+  },
   "code": "en-IE",
   "name": "English (Ireland)",
   "icon": "i-cif-ie"
@@ -182,7 +222,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceeca"
   },
-  "language": "en",
+  "language": {
+    "$oid": "698f94010d97eadd06b6fdfe"
+  },
   "code": "en-MT",
   "name": "English (Malta)",
   "icon": "i-cif-mt"
@@ -191,7 +233,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceecb"
   },
-  "language": "en",
+  "language": {
+    "$oid": "698f94010d97eadd06b6fdfe"
+  },
   "code": "en-US",
   "name": "English (United States)",
   "icon": "i-cif-us"
@@ -200,7 +244,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceecc"
   },
-  "language": "en",
+  "language": {
+    "$oid": "698f94010d97eadd06b6fdfe"
+  },
   "code": "en-CA",
   "name": "English (Canada)",
   "icon": "i-cif-ca"
@@ -209,7 +255,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceecd"
   },
-  "language": "en",
+  "language": {
+    "$oid": "698f94010d97eadd06b6fdfe"
+  },
   "code": "en-JM",
   "name": "English (Jamaica)",
   "icon": "i-cif-jm"
@@ -218,7 +266,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceece"
   },
-  "language": "en",
+  "language": {
+    "$oid": "698f94010d97eadd06b6fdfe"
+  },
   "code": "en-TT",
   "name": "English (Trinidad and Tobago)",
   "icon": "i-cif-tt"
@@ -227,7 +277,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceecf"
   },
-  "language": "en",
+  "language": {
+    "$oid": "698f94010d97eadd06b6fdfe"
+  },
   "code": "en-BZ",
   "name": "English (Belize)",
   "icon": "i-cif-bz"
@@ -236,7 +288,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceed0"
   },
-  "language": "en",
+  "language": {
+    "$oid": "698f94010d97eadd06b6fdfe"
+  },
   "code": "en-GY",
   "name": "English (Guyana)",
   "icon": "i-cif-gy"
@@ -245,7 +299,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceed1"
   },
-  "language": "en",
+  "language": {
+    "$oid": "698f94010d97eadd06b6fdfe"
+  },
   "code": "en-ZA",
   "name": "English (South Africa)",
   "icon": "i-cif-za"
@@ -254,7 +310,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceed2"
   },
-  "language": "en",
+  "language": {
+    "$oid": "698f94010d97eadd06b6fdfe"
+  },
   "code": "en-NG",
   "name": "English (Nigeria)",
   "icon": "i-cif-ng"
@@ -263,7 +321,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceed3"
   },
-  "language": "en",
+  "language": {
+    "$oid": "698f94010d97eadd06b6fdfe"
+  },
   "code": "en-GH",
   "name": "English (Ghana)",
   "icon": "i-cif-gh"
@@ -272,7 +332,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceed4"
   },
-  "language": "en",
+  "language": {
+    "$oid": "698f94010d97eadd06b6fdfe"
+  },
   "code": "en-KE",
   "name": "English (Kenya)",
   "icon": "i-cif-ke"
@@ -281,7 +343,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceed5"
   },
-  "language": "en",
+  "language": {
+    "$oid": "698f94010d97eadd06b6fdfe"
+  },
   "code": "en-ZW",
   "name": "English (Zimbabwe)",
   "icon": "i-cif-zw"
@@ -290,7 +354,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceed6"
   },
-  "language": "en",
+  "language": {
+    "$oid": "698f94010d97eadd06b6fdfe"
+  },
   "code": "en-IN",
   "name": "English (India)",
   "icon": "i-cif-in"
@@ -299,7 +365,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceed7"
   },
-  "language": "en",
+  "language": {
+    "$oid": "698f94010d97eadd06b6fdfe"
+  },
   "code": "en-SG",
   "name": "English (Singapore)",
   "icon": "i-cif-sg"
@@ -308,7 +376,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceed8"
   },
-  "language": "en",
+  "language": {
+    "$oid": "698f94010d97eadd06b6fdfe"
+  },
   "code": "en-PH",
   "name": "English (Philippines)",
   "icon": "i-cif-ph"
@@ -317,7 +387,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceed9"
   },
-  "language": "en",
+  "language": {
+    "$oid": "698f94010d97eadd06b6fdfe"
+  },
   "code": "en-HK",
   "name": "English (Hong Kong)",
   "icon": "i-cif-hk"
@@ -326,7 +398,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceeda"
   },
-  "language": "en",
+  "language": {
+    "$oid": "698f94010d97eadd06b6fdfe"
+  },
   "code": "en-MY",
   "name": "English (Malaysia)",
   "icon": "i-cif-my"
@@ -335,7 +409,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceedb"
   },
-  "language": "en",
+  "language": {
+    "$oid": "698f94010d97eadd06b6fdfe"
+  },
   "code": "en-PK",
   "name": "English (Pakistan)",
   "icon": "i-cif-pk"
@@ -344,7 +420,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceedc"
   },
-  "language": "en",
+  "language": {
+    "$oid": "698f94010d97eadd06b6fdfe"
+  },
   "code": "en-AU",
   "name": "English (Australia)",
   "icon": "i-cif-au"
@@ -353,7 +431,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceedd"
   },
-  "language": "en",
+  "language": {
+    "$oid": "698f94010d97eadd06b6fdfe"
+  },
   "code": "en-NZ",
   "name": "English (New Zealand)",
   "icon": "i-cif-nz"
@@ -362,7 +442,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceede"
   },
-  "language": "en",
+  "language": {
+    "$oid": "698f94010d97eadd06b6fdfe"
+  },
   "code": "en-PG",
   "name": "English (Papua New Guinea)",
   "icon": "i-cif-pg"
@@ -371,7 +453,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceedf"
   },
-  "language": "es",
+  "language": {
+    "$oid": "698f94090d97eadd06b6fe00"
+  },
   "code": "es",
   "name": "Español (España)",
   "icon": "i-cif-es"
@@ -380,7 +464,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceee0"
   },
-  "language": "et",
+  "language": {
+    "$oid": "698f94150d97eadd06b6fe02"
+  },
   "code": "et",
   "name": "Eesti (Eesti)",
   "icon": "i-cif-ee"
@@ -389,7 +475,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceee1"
   },
-  "language": "fa",
+  "language": {
+    "$oid": "698f941e0d97eadd06b6fe04"
+  },
   "code": "fa-IR",
   "name": "فارسی (ایران)",
   "icon": "i-cif-ir"
@@ -398,7 +486,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceee2"
   },
-  "language": "fi",
+  "language": {
+    "$oid": "698f94250d97eadd06b6fe06"
+  },
   "code": "fi",
   "name": "Suomeksi (Suomi)",
   "icon": "i-cif-fi"
@@ -407,7 +497,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceee3"
   },
-  "language": "fr",
+  "language": {
+    "$oid": "698f942d0d97eadd06b6fe08"
+  },
   "code": "fr",
   "name": "Français (France)",
   "icon": "i-cif-fr"
@@ -416,7 +508,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceee4"
   },
-  "language": "gl",
+  "language": {
+    "$oid": "698f94350d97eadd06b6fe0a"
+  },
   "code": "gl",
   "name": "Galego (España)",
   "icon": "i-cif-es"
@@ -425,7 +519,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceee5"
   },
-  "language": "he",
+  "language": {
+    "$oid": "698f943d0d97eadd06b6fe0c"
+  },
   "code": "he",
   "name": "עברית (ישראל)",
   "icon": "i-cif-il"
@@ -434,7 +530,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceee6"
   },
-  "language": "hi",
+  "language": {
+    "$oid": "698f94450d97eadd06b6fe0e"
+  },
   "code": "hi",
   "name": "हिन्दी (भारत)",
   "icon": "i-cif-in"
@@ -443,7 +541,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceee7"
   },
-  "language": "hr",
+  "language": {
+    "$oid": "698f944c0d97eadd06b6fe10"
+  },
   "code": "hr",
   "name": "Hrvatski (Hrvatska)",
   "icon": "i-cif-hr"
@@ -452,7 +552,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceee8"
   },
-  "language": "hu",
+  "language": {
+    "$oid": "698f94540d97eadd06b6fe12"
+  },
   "code": "hu",
   "name": "Magyar (Magyarország)",
   "icon": "i-cif-hu"
@@ -461,7 +563,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceee9"
   },
-  "language": "hy",
+  "language": {
+    "$oid": "698f945b0d97eadd06b6fe14"
+  },
   "code": "hy",
   "name": "Հայերեն (Հայաստան)",
   "icon": "i-cif-am"
@@ -470,7 +574,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceeea"
   },
-  "language": "id",
+  "language": {
+    "$oid": "698f94620d97eadd06b6fe16"
+  },
   "code": "id",
   "name": "Bahasa Indonesia (Indonesia)",
   "icon": "i-cif-id"
@@ -479,7 +585,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceeeb"
   },
-  "language": "it",
+  "language": {
+    "$oid": "698f946a0d97eadd06b6fe18"
+  },
   "code": "it",
   "name": "Italiano (Italia)",
   "icon": "i-cif-it"
@@ -488,7 +596,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceeec"
   },
-  "language": "ja",
+  "language": {
+    "$oid": "698f94710d97eadd06b6fe1a"
+  },
   "code": "ja",
   "name": "日本語 (日本)",
   "icon": "i-cif-jp"
@@ -497,7 +607,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceeed"
   },
-  "language": "ka",
+  "language": {
+    "$oid": "698f94780d97eadd06b6fe1c"
+  },
   "code": "ka",
   "name": "ქართული (საქართველო)",
   "icon": "i-cif-ge"
@@ -506,7 +618,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceeee"
   },
-  "language": "kk",
+  "language": {
+    "$oid": "698f947f0d97eadd06b6fe1e"
+  },
   "code": "kk",
   "name": "Қазақша (Қазақстан)",
   "icon": "i-cif-kz"
@@ -515,7 +629,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceeef"
   },
-  "language": "km",
+  "language": {
+    "$oid": "698f94860d97eadd06b6fe20"
+  },
   "code": "km",
   "name": "ភាសាខ្មែរ (កម្ពុជា)",
   "icon": "i-cif-kh"
@@ -524,7 +640,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceef0"
   },
-  "language": "ko",
+  "language": {
+    "$oid": "698f948c0d97eadd06b6fe22"
+  },
   "code": "ko",
   "name": "한국어 (대한민국)",
   "icon": "i-cif-kr"
@@ -533,7 +651,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceef1"
   },
-  "language": "ky",
+  "language": {
+    "$oid": "698f94930d97eadd06b6fe24"
+  },
   "code": "ky",
   "name": "Кыргызча (Кыргызстан)",
   "icon": "i-cif-kg"
@@ -542,7 +662,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceef2"
   },
-  "language": "lb",
+  "language": {
+    "$oid": "698f949a0d97eadd06b6fe26"
+  },
   "code": "lb",
   "name": "Lëtzebuergesch (Luxemburg)",
   "icon": "i-cif-lu"
@@ -551,7 +673,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceef3"
   },
-  "language": "lt",
+  "language": {
+    "$oid": "698f94a00d97eadd06b6fe28"
+  },
   "code": "lt",
   "name": "Lietuvių (Lietuva)",
   "icon": "i-cif-lt"
@@ -560,7 +684,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceef4"
   },
-  "language": "mn",
+  "language": {
+    "$oid": "698f94a70d97eadd06b6fe2a"
+  },
   "code": "mn",
   "name": "Монгол (Монгол Улс)",
   "icon": "i-cif-mn"
@@ -569,7 +695,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceef5"
   },
-  "language": "ms",
+  "language": {
+    "$oid": "698f94ad0d97eadd06b6fe2c"
+  },
   "code": "ms",
   "name": "Melayu (Malaysia)",
   "icon": "i-cif-my"
@@ -578,7 +706,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceef6"
   },
-  "language": "nb",
+  "language": {
+    "$oid": "698f94bb0d97eadd06b6fe2e"
+  },
   "code": "nb-NO",
   "name": "Norsk Bokmål (Norge)",
   "icon": "i-cif-no"
@@ -587,7 +717,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceef7"
   },
-  "language": "nl",
+  "language": {
+    "$oid": "698f94c40d97eadd06b6fe30"
+  },
   "code": "nl",
   "name": "Nederlands (Nederland)",
   "icon": "i-cif-nl"
@@ -596,7 +728,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceef8"
   },
-  "language": "pl",
+  "language": {
+    "$oid": "698f94cf0d97eadd06b6fe34"
+  },
   "code": "pl",
   "name": "Polski (Polska)",
   "icon": "i-cif-pl"
@@ -605,7 +739,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceef9"
   },
-  "language": "pt",
+  "language": {
+    "$oid": "698f94d70d97eadd06b6fe36"
+  },
   "code": "pt",
   "name": "Português (Portugal)",
   "icon": "i-cif-pt"
@@ -614,7 +750,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceefa"
   },
-  "language": "pt",
+  "language": {
+    "$oid": "698f94d70d97eadd06b6fe36"
+  },
   "code": "pt-BR",
   "name": "Português - Brasil (Brasil)",
   "icon": "i-cif-br"
@@ -623,7 +761,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceefb"
   },
-  "language": "ro",
+  "language": {
+    "$oid": "698f94de0d97eadd06b6fe38"
+  },
   "code": "ro",
   "name": "Română (România)",
   "icon": "i-cif-ro"
@@ -632,7 +772,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceefc"
   },
-  "language": "ru",
+  "language": {
+    "$oid": "698f94e40d97eadd06b6fe3a"
+  },
   "code": "ru",
   "name": "Русский (Россия)",
   "icon": "i-cif-ru"
@@ -641,7 +783,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceefd"
   },
-  "language": "sk",
+  "language": {
+    "$oid": "698f94eb0d97eadd06b6fe3c"
+  },
   "code": "sk",
   "name": "Slovenčina (Slovensko)",
   "icon": "i-cif-sk"
@@ -650,7 +794,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceefe"
   },
-  "language": "sl",
+  "language": {
+    "$oid": "698f94f20d97eadd06b6fe3e"
+  },
   "code": "sl",
   "name": "Slovenščina (Slovenija)",
   "icon": "i-cif-si"
@@ -659,7 +805,9 @@
   "_id": {
     "$oid": "6988b780c76b53004acceeff"
   },
-  "language": "sq",
+  "language": {
+    "$oid": "698f94fa0d97eadd06b6fe40"
+  },
   "code": "sq",
   "name": "Shqip (Shqipëri)",
   "icon": "i-cif-al"
@@ -668,7 +816,9 @@
   "_id": {
     "$oid": "6988b780c76b53004accef00"
   },
-  "language": "sv",
+  "language": {
+    "$oid": "698f95010d97eadd06b6fe42"
+  },
   "code": "sv",
   "name": "Svenska (Sverige)",
   "icon": "i-cif-se"
@@ -677,7 +827,9 @@
   "_id": {
     "$oid": "6988b780c76b53004accef01"
   },
-  "language": "th",
+  "language": {
+    "$oid": "698f95070d97eadd06b6fe44"
+  },
   "code": "th",
   "name": "ไทย (ประเทศไทย)",
   "icon": "i-cif-th"
@@ -686,7 +838,9 @@
   "_id": {
     "$oid": "6988b780c76b53004accef02"
   },
-  "language": "tj",
+  "language": {
+    "$oid": "698f950d0d97eadd06b6fe46"
+  },
   "code": "tj",
   "name": "Тоҷикӣ (Тоҷикистон)",
   "icon": "i-cif-tj"
@@ -695,7 +849,9 @@
   "_id": {
     "$oid": "6988b780c76b53004accef03"
   },
-  "language": "tr",
+  "language": {
+    "$oid": "698f95130d97eadd06b6fe48"
+  },
   "code": "tr",
   "name": "Türkçe (Türkiye)",
   "icon": "i-cif-tr"
@@ -704,7 +860,9 @@
   "_id": {
     "$oid": "6988b780c76b53004accef04"
   },
-  "language": "ug",
+  "language": {
+    "$oid": "698f951b0d97eadd06b6fe4a"
+  },
   "code": "ug-CN",
   "name": "ئۇيغۇرچە (جۇڭگو)",
   "icon": "i-cif-cn"
@@ -713,7 +871,9 @@
   "_id": {
     "$oid": "6988b780c76b53004accef05"
   },
-  "language": "uk",
+  "language": {
+    "$oid": "698f95210d97eadd06b6fe4c"
+  },
   "code": "uk",
   "name": "Українська (Україна)",
   "icon": "i-cif-ua"
@@ -722,7 +882,9 @@
   "_id": {
     "$oid": "6988b780c76b53004accef06"
   },
-  "language": "ur",
+  "language": {
+    "$oid": "698f95210d97eadd06b6fe4c"
+  },
   "code": "ur",
   "name": "اردو (پاکستان)",
   "icon": "i-cif-pk"
@@ -731,7 +893,9 @@
   "_id": {
     "$oid": "6988b780c76b53004accef07"
   },
-  "language": "uz",
+  "language": {
+    "$oid": "698f95280d97eadd06b6fe4e"
+  },
   "code": "uz",
   "name": "Oʻzbek (Oʻzbekiston)",
   "icon": "i-cif-uz"
@@ -740,7 +904,9 @@
   "_id": {
     "$oid": "6988b780c76b53004accef08"
   },
-  "language": "vi",
+  "language": {
+    "$oid": "698f952e0d97eadd06b6fe50"
+  },
   "code": "vi",
   "name": "Tiếng Việt (Việt Nam)",
   "icon": "i-cif-vn"
@@ -749,7 +915,9 @@
   "_id": {
     "$oid": "6988b780c76b53004accef09"
   },
-  "language": "zh-CN",
+  "language": {
+    "$oid": "698f95350d97eadd06b6fe52"
+  },
   "code": "zh-CN",
   "name": "简体中文 (中国)",
   "icon": "i-cif-cn"
@@ -758,7 +926,9 @@
   "_id": {
     "$oid": "6988b780c76b53004accef0a"
   },
-  "language": "zh-TW",
+  "language": {
+    "$oid": "698f95350d97eadd06b6fe52"
+  },
   "code": "zh-TW",
   "name": "繁體中文 (臺灣)",
   "icon": "i-cif-tw"
