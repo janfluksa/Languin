@@ -81,7 +81,12 @@ const handleResetForm = () => {
 			<div class="flex flex-col gap-4">
 				<p>Access allowed for assigned personel only.</p>
 
-        <UForm :disabled="pending" :schema="schema" :state="state" class="py-4 flex flex-col gap-4" @submit="onSubmit">
+        <UForm 
+			:disabled="pending" 
+			:schema="schema" 
+			:state="state" 
+			class="py-4 flex flex-col gap-4" 
+			@submit="onSubmit">
  
           <UFormField validate-on="blur" label="Email" name="email" size="xl" >
             <UInput v-model="state.email" class="w-full"/>

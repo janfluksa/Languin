@@ -7,7 +7,7 @@ export default defineEventHandler(async () => {
 
   return items.map(i => ({
     ...i.toObject(),
-    value: i.language,
+    value: i.code,
     label: i.name,
     language: undefined
   }))

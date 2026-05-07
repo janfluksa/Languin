@@ -1,10 +1,12 @@
 <script setup lang="ts" generic="T extends any">
 import { object, string, array } from 'yup'
+import type { FormSubmitEvent } from '@nuxt/ui'
 
 const pending = ref(false)
 const error = ref("")
 const submitted = ref(false)
 const form = ref()
+const token = useCookie<string | null>('token')
 
 const schema = object({
   projectName: string()
@@ -37,7 +39,14 @@ const state = reactive({
   otherLngs: []
 })
 
-const submit = async () => {
+type Schema = {
+  projectName: string
+  description?: string
+  defaultLng: string
+  otherLngs: string[]
+}
+
+const submit = async (event?: FormSubmitEvent<Schema>) => {
   submitted.value = true
   
   const valid = await form.value.validate()
@@ -45,7 +54,32 @@ const submit = async () => {
   
   error.value = ""
   pending.value = true
-  alert("Submitted")
+
+  try {
+    await $fetch('/api/projects', {
+      method: 'POST',
+      headers: {
+        Authorization: token.value ? `Bearer ${token.value}` : ''
+      },
+      body: {
+        projectName: event?.data.projectName ?? state.projectName,
+        description: event?.data.description ?? state.description,
+        defaultLng: event?.data.defaultLng ?? state.defaultLng,
+        otherLngs: event?.data.otherLngs ?? state.otherLngs
+      }
+    })
+
+    navigateTo('/')
+  } catch (err: unknown) {
+    if (err && typeof err === 'object' && 'data' in err) {
+      const errorData = (err as { data?: { statusMessage?: string } }).data
+      error.value = errorData?.statusMessage || 'Creating project failed'
+    } else {
+      error.value = 'Network error'
+    }
+  } finally {
+    pending.value = false
+  }
 }
 
 </script>
@@ -62,7 +96,7 @@ const submit = async () => {
           :state="state" 
           :validate-on="submitted ? ['input'] : []"
           class="py-4 flex flex-col gap-4" 
-          @submit.prevent="submit">
+          @submit="submit">
           
           <UFormField name="projectName" size="xl" >
             <UInput v-model="state.projectName" placeholder="Project name"  autofocus variant="subtle" size="xl" class="w-full" />
@@ -96,11 +130,19 @@ const submit = async () => {
 
           
           <div class="flex justify-end gap-2 mt-4">
-            <UButton size="lg" @click="submit">
+            <UButton type="submit" size="lg">
               Create project
             </UButton>
             <UButton to="/" variant="outline" color="neutral" size="lg">Cancel</UButton>
           </div>
+
+          <UAlert
+            v-show="error"
+            color="error"
+            :title="error"
+            icon="i-lucide-triangle-alert"
+            variant="soft"
+          />
         </UForm>
 
       

@@ -1,6 +1,6 @@
 import mongoose from 'mongoose'
 
-const TrLngSchema = mongoose.Schema({
+const TrLngSchema = new mongoose.Schema({
 	code: {
 		type: String,
 		required: true,
@@ -13,13 +13,9 @@ const TrLngSchema = mongoose.Schema({
 		type: String,
 		required: true,
 	},
-	fallback: {
-		type: String,
-		required: true,
-	},
-})
+}, { _id: false })
 
-const ProjectSchema = mongoose.Schema({
+const ProjectSchema = new mongoose.Schema({
    
 	name: {
 		type: String,
@@ -32,9 +28,7 @@ const ProjectSchema = mongoose.Schema({
 	defaultTrLng: {
 		type: TrLngSchema,
 	},
-	otherTrLngs: [{
-		type: [TrLngSchema],
-	}],
+	otherTrLngs: [TrLngSchema],
 	admins: [{
 		type: mongoose.Schema.Types.ObjectId,
 		ref: "User",
@@ -49,9 +43,9 @@ const ProjectSchema = mongoose.Schema({
 	}],
 	created: {
 		type: Date,
-		default: Date.now()
+		default: Date.now
 	}
-    
+	    
 })
 
 export default mongoose.model("Project", ProjectSchema)
