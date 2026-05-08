@@ -15,8 +15,11 @@ const projectId = computed(() => route.params.id as string)
 const namespace = computed(() => route.params.namespace as string)
 
 const nodeName = ref("")
+const state = reactive({
+  nodeName: ''
+})
 const nodeSlug = computed(() => {
-  return slugify(nodeName.value)
+  return slugify(state.nodeName)
 })
 
 const emit = defineEmits<{
@@ -58,7 +61,7 @@ const handleSave = async () => {
           Authorization: `Bearer ${token.value}`
         },
         body: {
-          name: nodeName.value
+          name: state.nodeName
         }
       }
     )
@@ -66,6 +69,14 @@ const handleSave = async () => {
     emit('success', {
       newPath: result.newPath
     })
+
+    toast.add({
+      title: 'Node created',
+      description: `Node ${result.newPath.name} was created successfully`,
+      color: 'success'
+    })
+
+    state.nodeName = ''
 
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -87,24 +98,24 @@ const handleSave = async () => {
   <UModal v-model:open="openModalNewNode">
     <template #content>
 
-      <div class="p-6">
-        <UFormField label="Node" size="lg">
-          <UInput v-model="nodeName" placeholder="Name" class="w-full" />
-        </UFormField>
+      <UForm :state="state" class="p-6" @submit="handleSave">
+          <UFormField label="Node" size="lg">
+            <UInput v-model="state.nodeName" placeholder="Name" class="w-full" />
+          </UFormField>
 
-        <div>
-          <p class="text-xs mt-2">
-            <span v-if="namespace" class="text-gray-500">{{ namespace }}</span>
-            <span v-show="nodeSlug.length>0" class="text-gray-500">.</span>
-            <span class="text-gray-700 font-semibold">{{ nodeSlug }}</span>
-          </p>
-        </div>
+          <div>
+            <p class="text-xs mt-2">
+              <span v-if="namespace" class="text-gray-500">{{ namespace }}</span>
+              <span v-show="nodeSlug.length>0" class="text-gray-500">.</span>
+              <span class="text-gray-700 font-semibold">{{ nodeSlug }}</span>
+            </p>
+          </div>
 
-        <div class="text-right mt-4">
-          <UButton label="Cancel" color="neutral" variant="outline" class="w-fit mr-1" @click="handleClose" />
-          <UButton label="Create node" :disabled="nodeName.length<1" color="neutral" @click="handleSave" />
-        </div>
-      </div>
+          <div class="text-right mt-4">
+            <UButton label="Cancel" color="neutral" variant="outline" class="w-fit mr-1" @click="handleClose" />
+            <UButton label="Create node" :disabled="state.nodeName.length<1" color="neutral" type="submit" />
+          </div>
+      </UForm>
 
     </template>
   </UModal>

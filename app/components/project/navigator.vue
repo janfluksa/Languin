@@ -150,8 +150,10 @@ const dropdownItems = ref([
     
       <UPageHeader v-if="project" :title=ns?.node.name class="border-0 mx-3 py-0 pb-8"/>
     </div>
+    <h1 class="text-2xl font-bold">{{ project?.name }}</h1>
 
     <!-- Složky -->  
+     <p>Složky</p>
     <div v-if="ns" class="flex flex-wrap gap-4">
 
         <TranslationsNodeContextMenu v-for="node in ns.subnodes" :key="node._id">
@@ -167,6 +169,7 @@ const dropdownItems = ref([
     </div>
 
     <!-- Tabulka klíčů -->
+     <p>Tabulka klíčů</p>
     <translationsKeyList :project="projectId" :namespace="namespace"/>
   </div>
 

@@ -41,7 +41,7 @@ const TranslationSchema = new mongoose.Schema({
 
   namespace: {
     type: String,
-    required: true,
+    default: '',
     index: true
   },
 

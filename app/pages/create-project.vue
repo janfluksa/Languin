@@ -43,10 +43,10 @@ type Schema = {
   projectName: string
   description?: string
   defaultLng: string
-  otherLngs: string[]
+  otherLngs: (string | undefined)[]
 }
 
-const submit = async (event?: FormSubmitEvent<Schema>) => {
+const submit = async (event: FormSubmitEvent<Schema>) => {
   submitted.value = true
   
   const valid = await form.value.validate()
@@ -62,10 +62,10 @@ const submit = async (event?: FormSubmitEvent<Schema>) => {
         Authorization: token.value ? `Bearer ${token.value}` : ''
       },
       body: {
-        projectName: event?.data.projectName ?? state.projectName,
-        description: event?.data.description ?? state.description,
-        defaultLng: event?.data.defaultLng ?? state.defaultLng,
-        otherLngs: event?.data.otherLngs ?? state.otherLngs
+        projectName: event.data.projectName ?? state.projectName,
+        description: event.data.description ?? state.description,
+        defaultLng: event.data.defaultLng ?? state.defaultLng,
+        otherLngs: event.data.otherLngs.filter((lng): lng is string => !!lng)
       }
     })
 

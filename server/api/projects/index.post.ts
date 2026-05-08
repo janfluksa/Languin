@@ -1,7 +1,9 @@
 import { readBody } from 'h3'
 import * as yup from 'yup'
 import Cfg_Lng_Locale from '~~/server/models/Cfg_Lng_Locale'
+import NamespacePath from '~~/server/models/NamespacePath'
 import Project from '~~/server/models/Project'
+import Translation from '~~/server/models/Translation'
 
 // Schéma pro validaci yup
 const projectSchema = yup.object({
@@ -49,6 +51,22 @@ export default defineEventHandler(async (event) => {
 
   try {
     await project.save()
+
+    await NamespacePath.create({
+      project: project._id,
+      name: 'Home',
+      path: ''
+    })
+
+    await Translation.create({
+      project: project._id,
+      locale: defaultLocale.code,
+      namespace: '',
+      key: 'Home',
+      fullKey: 'Home',
+      ast: 'Home'
+    })
+    
     return {
       success: true,
       locale: defaultLocale,
@@ -63,7 +81,4 @@ export default defineEventHandler(async (event) => {
     })
   }
   
-  
-
-
 })
